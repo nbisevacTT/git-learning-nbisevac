@@ -27,3 +27,6 @@ Kad si napravio lokalne komitove, onda treba to da pushujes na github, gitlab, i
 Prvi put treba da ide `git push -u origin [ime brancha]`, ovo upararuje moju lokalnu sa onom tamo. Ovo `-u` je `--set-upstream`, moze oba, samo je `-u` skraceno. Posle moze samo `git push`.\\
 Kad hoces da preuzmes i spojis izmene sa nekog tamo u tvoj lokalni folder, onda `git pull`.\\
 Ako hocu ekspilicitno promene sa remote maina onda `git pull origin main`. Mada bolja je opcija da se prebacis lokalno na main granu pa onda da uradis `git pull`, pa se onda vratis na svoju granu i uradis merge sa mainom.\\
+
+### konflikt situacija
+Ako se na main branchu promeni nesto, a zatim na nekom drugom branchu odradis u istom promenis nesto drugo, a onda opet na mainu promenis i pokusas da merge-ujes onda ce da dodje do konflikta. Pojave se i neke <<<=====>>> i slicno, to se obrise i onda dok si u mainu merge-ujes.

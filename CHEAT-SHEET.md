@@ -32,7 +32,7 @@ Ako hocu ekspilicitno promene sa remote maina onda `git pull origin main`. Mada 
 Ako se na main branchu promeni nesto, a zatim na nekom drugom branchu odradis u istom promenis nesto drugo, a onda opet na mainu promenis i pokusas da merge-ujes onda ce da dodje do konflikta. Pojave se i neke <<<=====>>> i slicno, to se obrise i onda dok si u mainu merge-ujes.
 
 ### revert i reset
-ako si u commitu dodao liniju teksta, `git revert [commit-id]` ce da napravi novi commit koji ce da izbrise tu liniju.\\
+ako si u commitu dodao liniju teksta, `git revert [commit-id]` ce da napravi novi commit koji ce da izbrise tu liniju (commit id se gleda kao `git log`).\\
 BITNO: Radi se kada je vec uradjen `push`, trebalo bi da ce resiti problem.\\
 `git reset` ce da vrati unazad, nesto kao undo. \\
 - `git reset --soft HEAD~1` vraca se jedan korak unazad, kao da se nista nije desilo\\

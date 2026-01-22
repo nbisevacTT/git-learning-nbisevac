@@ -24,5 +24,6 @@ Kako hoces da dodas novi branch moze `git checkout -b [ime brancha]`, a moze i `
 ### MNOGO BITNO
 Ovde moze najvise da se zezne, ali ako se pazi nije strasno. \\
 Kad si napravio lokalne komitove, onda treba to da pushujes na github, gitlab, ili nesto trece. OPET PROVERI DA LI SI DODAO SVE STO SI ZELEO, BOLJE DA DODAS MANJE NEGO VISE!!!\\
-Prvi put treba da ide `git push -u origin [ime brancha]`, ovo upararuje moju lokalnu sa onom tamo. Posle moze samo `git push`.\\
+Prvi put treba da ide `git push -u origin [ime brancha]`, ovo upararuje moju lokalnu sa onom tamo. Ovo `-u` je `--set-upstream`, moze oba, samo je `-u` skraceno. Posle moze samo `git push`.\\
 Kad hoces da preuzmes i spojis izmene sa nekog tamo u tvoj lokalni folder, onda `git pull`.\\
+Ako hocu ekspilicitno promene sa remote maina onda `git pull origin main`. Mada bolja je opcija da se prebacis lokalno na main granu pa onda da uradis `git pull`, pa se onda vratis na svoju granu i uradis merge sa mainom.\\
